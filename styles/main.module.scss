@@ -1,0 +1,67 @@
+.c-header {
+    // background-image: url(../public/images/background.jpg);
+    // background-size: cover;
+    // mix-blend-mode: multiply;
+
+    // mix-blend-mode: darken;
+    button {
+        background-color: transparent;
+        box-shadow: none;
+        color:
+            #000;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 14px;
+
+        .hover\:bg-primary\/90:hover {
+            background-color: transparent !important;
+            background: transparent !important;
+        }
+    }
+
+    button:disabled {
+        opacity: 0.5 !important;
+        color: white !important;
+    }
+
+    :global {
+        .wallet-adapter {
+            &-dropdown {
+                width: 100% !important;
+
+            }
+
+            &-button {
+                width: 100% !important;
+                border-radius: 8px;
+
+                &:not([disabled]):hover {
+                    background-color: #fff2ea !important;
+                    border-color: #fff2ea;
+                }
+
+            }
+        }
+
+    }
+}
+
+.animate-twinkle {
+    animation: twinkle 1s linear infinite;
+}
+
+@keyframes twinkle {
+
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+      }
+      50% {
+        text-shadow: 0 0 10px #f77402, 0 0 15px #f77402, 0 0 20px #f77402 ;
+      }
+}
